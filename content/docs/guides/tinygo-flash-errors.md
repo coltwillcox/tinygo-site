@@ -18,7 +18,7 @@ avrdude: ser_open(): can't open device "/dev/ttyACM0": Permission denied
 
 The above error may be followed by `ioctl` errors too.
 
-To fix this we must make sure our user is included in the group with access to serial ports. On ubuntu and Debian this is the **dialout** group.
+To fix this we must make sure our user is included in the group with access to serial ports. On ubuntu and Debian this is the **dialout** group. The equivalent group on Arch Linux based distributions is **uucp**.
 
 First we can check if we are not already part of the `dialout` group:
 
